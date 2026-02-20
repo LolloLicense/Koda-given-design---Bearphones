@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bearphones</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <!-- Main style -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Swiperstyle -->
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- scrips -->
+     <script src="js/scrollEffect.js" defer></script>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+     <script src="js/productColor.js" defer></script>
+     <script src="js/infomartion-modal.js"defer></script>
+    
+
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Site header -->
+        <header class="site-header">
+            <div class="site-header__inner">
+
+                <!-- Branding -->
+                 <a href="index.html" class="branding">
+                    <svg width="45" height="30" viewBox="0 0 45 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 30V0H9.11927C6.25077 0 4.01376 0.699469 2.40826 2.09841C0.802752 3.49735 0 5.52157 0 8.17108C0 10.8418 0.802752 12.8766 2.40826 14.2755C4.01376 15.6745 6.25077 16.374 9.11927 16.374H16.344V30H21ZM9.11927 3.65632H16.344V12.7176H9.11927C7.72783 12.7176 6.6682 12.3467 5.94037 11.6048C5.19113 10.8418 4.81651 9.6972 4.81651 8.17108C4.81651 6.66616 5.19113 5.54277 5.94037 4.80091C6.6682 4.03785 7.72783 3.65632 9.11927 3.65632Z" fill="currentColor"/>
+                        <path d="M24 -3.8147e-06L24 30L35.8807 30C38.7492 30 40.9862 29.3005 42.5917 27.9016C44.1972 26.5027 45 24.4784 45 21.8289C45 19.1582 44.1972 17.1234 42.5917 15.7245C40.9862 14.3255 38.7492 13.626 35.8807 13.626L28.656 13.626L28.656 -3.00062e-06L24 -3.8147e-06ZM35.8807 26.3437L28.656 26.3437L28.656 17.2824L35.8807 17.2824C37.2722 17.2824 38.3318 17.6533 39.0596 18.3952C39.8089 19.1582 40.1835 20.3028 40.1835 21.8289C40.1835 23.3338 39.8089 24.4572 39.0596 25.1991C38.3318 25.9622 37.2722 26.3437 35.8807 26.3437Z" fill="currentColor"/>
+                    </svg>
+                 </a>
+
+                 <nav class="site-menu">
+                    <ul class="site-menu__list">
+                        <li class="site-menu__item"><a href="" class="site-menu__link">The Product</a></li>
+                        <li class="site-menu__item"><a href="" class="site-menu__link">About us</a></li>
+                        <li class="site-menu__item"><a href="" class="site-menu__link">Webshop</a></li>
+                    </ul>
+                 </nav>
+
+                 <div class="site-header__buttons">
+                    <a href="" class="cart">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.6666 24C23.3739 24 24.0522 24.2809 24.5523 24.781C25.0524 25.2811 25.3333 25.9594 25.3333 26.6667C25.3333 27.3739 25.0524 28.0522 24.5523 28.5523C24.0522 29.0524 23.3739 29.3333 22.6666 29.3333C21.9594 29.3333 21.2811 29.0524 20.781 28.5523C20.2809 28.0522 20 27.3739 20 26.6667C20 25.1867 21.1866 24 22.6666 24ZM1.33331 2.66666H5.69331L6.94665 5.33332H26.6666C27.0203 5.33332 27.3594 5.4738 27.6095 5.72385C27.8595 5.9739 28 6.31303 28 6.66666C28 6.89332 27.9333 7.11999 27.84 7.33332L23.0666 15.96C22.6133 16.7733 21.7333 17.3333 20.7333 17.3333H10.8L9.59998 19.5067L9.55998 19.6667C9.55998 19.7551 9.5951 19.8398 9.65761 19.9024C9.72012 19.9649 9.80491 20 9.89331 20H25.3333V22.6667H9.33331C8.62607 22.6667 7.94779 22.3857 7.44769 21.8856C6.9476 21.3855 6.66665 20.7072 6.66665 20C6.66665 19.5333 6.78665 19.0933 6.98665 18.72L8.79998 15.4533L3.99998 5.33332H1.33331V2.66666ZM9.33331 24C10.0406 24 10.7188 24.2809 11.2189 24.781C11.719 25.2811 12 25.9594 12 26.6667C12 27.3739 11.719 28.0522 11.2189 28.5523C10.7188 29.0524 10.0406 29.3333 9.33331 29.3333C8.62607 29.3333 7.94779 29.0524 7.44769 28.5523C6.9476 28.0522 6.66665 27.3739 6.66665 26.6667C6.66665 25.1867 7.85331 24 9.33331 24ZM21.3333 14.6667L25.04 7.99999H8.18665L11.3333 14.6667H21.3333Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                    <button class="menu-button">
+                        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 17.6667V14.7778H26V17.6667H0ZM0 10.4445V7.55557H26V10.4445H0ZM0 3.22223V0.333344H26V3.22223H0Z" fill="currentColor"/>
+                        </svg>
+                    </button>
+                 </div>
+
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="hero__inner">
+
+                
+                <div class="hero__content">
+                    <h5 class="hero__subtitle">Bearphones Pro™</h5> 
+                    <h1 class="hero__title">Release your inner <span>bear</span> in your ear with Bearphones</h1>
+                    <p class="hero__description">A blandit id volutpat enim mauris id ultricies eget. Pharetra nisl placerat enim ipsum lectus.</p>
+                    <a href="" class="button"><span>Lorem ipsum dolor</span> 
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 11V13H16L10.5 18.5L11.92 19.92L19.84 12L11.92 4.07999L10.5 5.49999L16 11H4Z" fill="currentColor"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="featured-product">
+
+                    <div class="colors">
+                        <ul class="colors__list">
+                            <li class="colors__item"><a href="#" class="color color--black" data-color="0"></a></li>
+                            <li class="colors__item"><a href="#" class="color color-turquoise" data-color="1"></a></li>
+                            <li class="colors__item"><a href="#" class="color color-white" data-color="2"></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="the-product">
+                        <figure class="the-product__image">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="assets/images/Bearphone-case-front.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="assets/images/bearphone-case-front-blue.png" alt=""></div>
+                                    <div class="swiper-slide"><img src="assets/images/bearphone-case-front-violett.png" alt=""></div>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="the-product__features">
+                            <ul class="">
+
+                                <li>
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.31933 6.47059L13.6134 2.81513L14.958 5.2521L9.03361 7.81512L15 10.3782L13.6134 12.8571L8.31933 9.20168L8.90756 15.6723H6.17647L6.68067 9.20168L1.42857 12.8992L0 10.3361L5.92437 7.77311L0 5.29412L1.38655 2.81513L6.72269 6.47059L6.17647 0H8.94958L8.31933 6.47059Z" fill="currentColor"/>
+                                    </svg>
+                                    <span>Lifetime Warranty</span>
+                                </li>
+                                
+                                <li>
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.31933 6.47059L13.6134 2.81513L14.958 5.2521L9.03361 7.81512L15 10.3782L13.6134 12.8571L8.31933 9.20168L8.90756 15.6723H6.17647L6.68067 9.20168L1.42857 12.8992L0 10.3361L5.92437 7.77311L0 5.29412L1.38655 2.81513L6.72269 6.47059L6.17647 0H8.94958L8.31933 6.47059Z" fill="currentColor"/>
+                                    </svg>
+                                    <span>Brain-enhancing features</span>
+                                </li>
+                                
+                                <li>
+                                    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.31933 6.47059L13.6134 2.81513L14.958 5.2521L9.03361 7.81512L15 10.3782L13.6134 12.8571L8.31933 9.20168L8.90756 15.6723H6.17647L6.68067 9.20168L1.42857 12.8992L0 10.3361L5.92437 7.77311L0 5.29412L1.38655 2.81513L6.72269 6.47059L6.17647 0H8.94958L8.31933 6.47059Z" fill="currentColor"/>
+                                    </svg>
+                                    <span>Up to 50h* of battery life</span>
+                                </li>
+
+                            </ul>
+                            <span class="the-product__explanation">* If only listening to Björn</span>
+                        </div>
+                    </div>
+
+                    <figure class="the-case">
+                        <img src="assets/images/Bearphone-case-top.png" alt="">
+                    </figure>
+                    
+                    <div class="featured-product__content">
+                        <h3 class="featured-product__title">Bearphone Pro™</h3>
+                        <p class="featured-product__description">A blandit id volutpat enim mauris id ultricies eget. </p>
+                        <a href="" class="button button--inverted button--shadow">
+                            <span>Lorem ipsum dolor</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 11V13H16L10.5 18.5L11.92 19.92L19.84 12L11.92 4.07999L10.5 5.49999L16 11H4Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+
+
+                    <button id="information-button" class=" featurend-product__info-button button button--only-icon button--transparent button--inverted">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 7H13V9H11V7ZM11 11H13V17H11V11ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z" fill="currentColor"/>
+                    </svg>
+                    </button>
+
+                    <!-- Information modal -->
+                    <dialog id="information-dialog" class="modal">
+                        <button id="information-close" class="modal__close">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M24.5548 8.29377L22.7346 6.47147L15.51 13.6877L8.29378 6.46312L6.47148 8.28332L13.6877 15.5079L6.46313 22.7241L8.28333 24.5465L15.5079 17.3302L22.7242 24.5548L24.5465 22.7346L17.3302 15.51L24.5548 8.29377Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                        
+                        <h3 class="info-title featured-product__title">Learn more about the <span>Bearphones</span></h3>
+                        <h5 class="information-except">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, optio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae sequi quos soluta ducimus id nam consequuntur, nisi nostrum a.</h5>
+                        
+                        <div class="list">
+                            <li>Super long lasting battery</li>
+                            <li>High quality sound (but wont scare the bears)</li>
+                            <li>Noise canceling to the max (if you prefer to zoone out)</li>
+                            <li>Bearphones fits all ears (humans and others)</li>
+                        </div>
+
+                        <button class=" info-buy button button--inverted button--shadow">Buy a pair now!</button>
+
+                        <p class="fine-print"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt, perspiciatis! Nemo temporibus dignissimos placeat, eveniet cum, saepe impedit, ut consequuntur repudiandae maxime similique ducimus perspiciatis. Unde alias adipisci inventore quod!
+                            Vero, veniam. Provident numquam eius nostrum nemo enim molestias fuga distinctio sit repellat! Ipsam voluptatibus nostrum distinctio ullam sequi, odio in, explicabo a officia exercitationem voluptas officiis eius maxime quibusdam.
+                            Sapiente aut est quis error cupiditate ratione quisquam facilis odio nostrum, corporis similique omnis maiores fuga consequatur ipsam, temporibus facere sed delectus iste totam magni atque provident ipsum id. Aspernatur.
+                            Hic iure asperiores rem fugiat temporibus! Excepturi, eum! Mollitia possimus recusandae tempore quam ex illum labore consequuntur culpa voluptatum iste similique vel molestiae sit quibusdam quis iure consequatur, ducimus nisi.
+                            Blanditiis quasi expedita doloribus illum accusantium! Facilis similique at odio repellendus nam consequatur rem, quisquam blanditiis cumque sit iure illum corrupti id nostrum possimus, soluta sed mollitia voluptatibus atque numquam.
+                            Provident eos reiciendis sit quos deleniti amet, iste non at adipisci id quam debitis aliquam vitae modi quod eum quis possimus veniam, explicabo maiores dolor repellendus quas nemo nihil! Necessitatibus.
+                            Autem magnam, placeat ipsum facilis dicta magni nemo asperiores officiis repellendus reiciendis unde eum. Sit blanditiis ipsam nam obcaecati reiciendis rerum quam autem mollitia iusto explicabo dolor, quae quisquam sint.
+                            Sit minima amet sint mollitia odit aliquam quam in esse, eveniet recusandae. Vero illo aliquam laudantium eligendi fugit aspernatur delectus nobis vel eius. Magnam expedita perspiciatis dolorum eveniet, tempore quibusdam asperiores dicta temporibus ipsam iure maiores cupiditate?
+                            Libero dolorem laborum saepe architecto sequi, explicabo sunt velit dolore dolores nihil rerum, quibusdam, voluptatibus possimus expedita debitis atque modi magnam eligendi quasi quam odit dicta. Hic nesciunt sed nemo!
+                            A perferendis exercitationem necessitatibus at enim quia culpa quisquam voluptatem nesciunt blanditiis accusantium mollitia iusto nam vitae ex, molestias aspernatur ea nobis. Deleniti quis itaque nobis dicta maiores perspiciatis ratione!
+                        </p>
+                    </dialog>
+
+                </div>
+
+                <div class="promo">
+                    <div class="promo__image">
+                        <img id="bearphone-left" src="assets/images/bearphon-left.png" alt="">
+                        <img id="bearphone-right" src="assets/images/Bearphone-right.png" alt="">
+                    </div>
+
+                    <div class="promo__content">
+                        <h4 class="promo__title">Need an extra pair for you partner?</h4>
+                        <p class="promo__description">A blandit id volutpat enim mauris id ultricies eget. </p>
+                        <a href="" class="promo__link link">Get your extra pair now!</a>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
